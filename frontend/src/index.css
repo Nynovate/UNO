@@ -3,4 +3,41 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+:root {
+	--color-primary: #ED1C24;
+	--color-secondary: #F8DA27;
+	--color-foreground: #EEEEEE;
+	--color-highlight: #666666;
+	--color-midtone: #363636;
+	--color-darktone: #262626;
+	--color-background: #1E1E1E;
+
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-accent: #FFC107;
+		--color-foreground: #1E1E1E;
+		--color-highlight: #262626;
+		--color-darktone: #666666;
+		--color-background: #DADADA;
+	}
+}
+
+@theme inline {
+	--color-light-foreground: #EEEEEE;
+	--color-light-background: #1E1E1E;
+
+	--color-accent: var(--color-accent);
+	--color-foreground: var(--color-foreground);
+	--color-highlight: var(--color-highlight);
+	--color-midtone: var(--color-midtone);
+	--color-darktone: var(--color-darktone);
+	--color-background: var(--color-background);
+	--color-primary: var(--color-primary);
+	--color-secondary: var(--color-secondary);
 }

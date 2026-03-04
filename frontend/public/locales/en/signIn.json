@@ -1,0 +1,12 @@
+{
+	"forms": {
+		"usernameOrEmail": {
+			"title": "Username or Email",
+			"placeholder": "razanNy"
+		},
+		"password": {
+			"title": "Password",
+			"placeholder": "Enter your password"
+		}
+	}
+}

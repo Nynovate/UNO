@@ -9,10 +9,11 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
+	load: "languageOnly",
     debug: import.meta.env.MODE === "development",
 
-    ns: ["translationData"],
-    defaultNS: "translationData",
+    ns: ["common"],
+    defaultNS: "common",
     interpolation: {
       escapeValue: false,
     },
