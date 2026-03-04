@@ -13,6 +13,10 @@ const router = createBrowserRouter([
 			{
 				path: "/sign-in",
 				element: <SignInPage />
+			},
+			{
+				path: "*",
+				element: <SignInPage />
 			}
 		]
 	}
