@@ -1,5 +1,9 @@
 {
 	"website": {
 		"name": "UNO"
+	},
+	"CTA": {
+		"signIn": "Se connecter",
+		"signUp": "S'inscrire"
 	}
 }

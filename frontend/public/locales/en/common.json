@@ -1,5 +1,9 @@
 {
 	"website": {
 		"name": "UNO"
+	},
+	"CTA": {
+		"signIn": "Sign In",
+		"signUp": "Sign Up"
 	}
 }

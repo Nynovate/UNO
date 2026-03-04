@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import './i18n/i18n.ts'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout/layout.tsx'
 import SignInPage from './pages/sign-in.tsx'
 import { GoogleOAuthProvider } from '@react-oauth/google'
+import LandingPage from './pages/landing.tsx'
 
 const router = createBrowserRouter([
 	{
@@ -15,8 +17,12 @@ const router = createBrowserRouter([
 				element: <SignInPage />
 			},
 			{
+				path: "/",
+				element: <LandingPage />
+			},
+			{
 				path: "*",
-				element: <SignInPage />
+				element: <LandingPage />
 			}
 		]
 	}
