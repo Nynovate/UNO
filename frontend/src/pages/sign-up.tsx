@@ -5,8 +5,8 @@ import CTA from "../components/CTA";
 import { Link } from "react-router-dom";
 import { H1, H5 } from "../components/typography";
 
-const SignInPage: React.FC = () => {
-	const { t } = useTranslation(["common", "signIn"]);
+const SignUpPage: React.FC = () => {
+	const { t } = useTranslation(["common", "signUp"]);
 
 	const submitForms = async (e: React.FormEvent<HTMLFormElement>) => {
 		const formData = new FormData(e.currentTarget);
@@ -44,7 +44,7 @@ const SignInPage: React.FC = () => {
 				>
 					<Trans
 						t={t}
-						i18nKey="signIn:headers.connect.title"
+						i18nKey="signUp:headers.connect.title"
 						components={{
 							one: <b className="text-primary text-shadow-lg" style={{ fontWeight: "bold" }} />,
 							two: <b className="text-secondary text-shadow-lg" style={{ fontWeight: "bold" }} />,
@@ -53,7 +53,7 @@ const SignInPage: React.FC = () => {
 					</Trans>
 				</H1>
 				<H5>
-					{t("signIn:headers.connect.subtitle")}
+					{t("signUp:headers.connect.subtitle")}
 				</H5>
 			</header>
 			<section
@@ -68,31 +68,39 @@ const SignInPage: React.FC = () => {
 					onSubmit={submitForms}
 				>
 					<InputText
-						title={t("signIn:forms.usernameOrEmail.title")}
-						placeholder={t("signIn:forms.usernameOrEmail.placeholder")}
+						title={t("signUp:forms.username.title")}
+						placeholder={t("signUp:forms.username.placeholder")}
 						type="text"
-						name="usernameOrEmail"
+						name="username"
+					/>
+					<InputText
+						title={t("signUp:forms.mail.title")}
+						placeholder={t("signUp:forms.mail.placeholder")}
+						type="mail"
+						name="mail"
 					/>
 					<InputPassword
-						title={t("signIn:forms.password.title")}
-						placeholder={t("signIn:forms.password.placeholder")}
+						title={t("signUp:forms.password.title")}
+						placeholder={t("signUp:forms.password.placeholder")}
 						name="password"
 					/>
-					<Link
-						to="/sign-in/forgot-pass"
-						className="font-normal
-						mr-auto
-						text-sm
-						cursor-pointer
-						hover:underline
-						"
-					>
-						{t("signIn:buttons.forgotPass")}
-					</Link>
 					<CTA
-						title={t("CTA.signIn")}
+						title={t("CTA.signUp")}
 						type="submit"
 					/>
+					<div
+						className="text-left text-sm"
+					>
+						<Trans
+							t={t}
+							i18nKey="signUp:notice.terms"
+							components={{
+								one: <Link to="/terms-of-service" className="hover:underline" style={{ fontWeight: "bold" }} />,
+								two: <Link to="/privacy-policy" className="hover:underline" style={{ fontWeight: "bold" }} />
+							}}
+						>
+						</Trans>
+					</div>
 					<div
 						className="grid grid-cols-[1fr_auto_1fr]
 						gap-3
@@ -116,15 +124,16 @@ const SignInPage: React.FC = () => {
 						buttonStyle="secondary"
 						type="submit"
 					/>
+
 					<div
 						className="text-sm"
 					>
 						<Trans
 							t={t}
-							i18nKey="signIn:buttons.alreadyHaveAnAccount"
+							i18nKey="signUp:buttons.dontHaveAnAccount"
 							components={{
 								simple: <b className="font-normal" />,
-								redirect: <Link to="/sign-up" className="hover:underline" style={{ fontWeight: "bold" }} />
+								redirect: <Link to="/sign-in" className="hover:underline" style={{ fontWeight: "bold" }} />
 							}}
 						>
 						</Trans>
@@ -135,4 +144,4 @@ const SignInPage: React.FC = () => {
 	);
 }
 
-export default SignInPage;
+export default SignUpPage;

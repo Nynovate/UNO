@@ -7,6 +7,7 @@ import Layout from './layout/layout.tsx'
 import SignInPage from './pages/sign-in.tsx'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import LandingPage from './pages/landing.tsx'
+import SignUpPage from './pages/sign-up.tsx'
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
 			{
 				path: "/sign-in",
 				element: <SignInPage />
+			},
+			{
+				path: "/sign-up",
+				element: <SignUpPage />
 			},
 			{
 				path: "/",

@@ -45,7 +45,9 @@ const CTA: React.FC<CTAProps> = ({
 		>
 			<div
 				style={{
-					opacity: buttonStyle === "disabled" ? "25%" : "100%"
+					opacity: buttonStyle === "disabled" ? "25%" : "100%",
+					textShadow: "0px 0px 4px color-mix(in srgb, black 50%, transparent)",
+					fontWeight: "normal"
 				}}
 			>{title}</div>
 			{

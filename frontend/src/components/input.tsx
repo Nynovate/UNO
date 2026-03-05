@@ -50,7 +50,7 @@ export const InputText: React.FC<InputProps> = ({
 				/>
 				<input
 					className="focus:outline-none font-light
-					text-md
+					text-sm
 					caret-secondary"
 					required
 					type={type}
@@ -100,7 +100,7 @@ export const InputPassword: React.FC<Omit<InputProps, "type">> = ({
 			>
 				<input
 					className="focus:outline-none font-light
-					text-md
+					text-sm
 					caret-secondary"
 					required
 					type={showInput ? "text" : "password"}

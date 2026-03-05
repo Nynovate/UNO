@@ -2,9 +2,10 @@
 	"website": {
 		"name": "UNO"
 	},
+	"or": "Or",
 	"CTA": {
 		"signIn": "Sign In",
 		"signUp": "Sign Up",
-		"google": "Continue with Google"
+		"google": "Continue With Google"
 	}
 }

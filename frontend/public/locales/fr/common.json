@@ -2,8 +2,10 @@
 	"website": {
 		"name": "UNO"
 	},
+	"or": "Ou",
 	"CTA": {
 		"signIn": "Se connecter",
-		"signUp": "S'inscrire"
+		"signUp": "S'inscrire",
+		"google": "Continuer Avec Google"
 	}
 }

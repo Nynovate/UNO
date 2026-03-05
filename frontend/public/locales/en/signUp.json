@@ -1,0 +1,29 @@
+{
+	"headers": {
+		"connect": {
+			"title": "Join <one>U<one/><two>N</two><one>O<one/>",
+			"subtitle": "Create your account"
+		}
+	},
+	"forms": {
+		"username": {
+			"title": "Username",
+			"placeholder": "razanNy"
+		},
+		"mail": {
+			"title": "Email",
+			"placeholder": "example@gmail.com"
+		},
+		"password": {
+			"title": "Password",
+			"placeholder": "*******"
+		}
+	},
+	"notice": {
+		"terms": "By creating an account, you accept our <one>Terms of service</one> and <two>Privacy policy</two>"
+	},
+	"buttons": {
+		"forgotPass": "Forgot Password?",
+		"dontHaveAnAccount": "<simple>Don't have an account?<simple/> <redirect>Sign In</redirect>"
+	}
+}

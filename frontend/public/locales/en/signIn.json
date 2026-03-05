@@ -1,4 +1,10 @@
 {
+	"headers": {
+		"connect": {
+			"title": "Connect to <one>U<one/><two>N</two><one>O<one/>",
+			"subtitle": "Reconnect to your account"
+		}
+	},
 	"forms": {
 		"usernameOrEmail": {
 			"title": "Username or Email",

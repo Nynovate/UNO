@@ -44,16 +44,15 @@ const LandingPage: React.FC = () => {
 							t={t}
 							i18nKey="landing:hero.title"
 							components={{
-								red: <b className="text-red-500 font-bold text-[4rem]" />,
-								yellow: <b className="text-yellow-500 font-bold text-[4rem]" />
+								red: <b className="text-primary text-[4rem]" style={{ fontWeight: "bold" }} />,
+								yellow: <b className="text-secondary text-[4rem]" style={{ fontWeight: "bold" }} />
 							}}
 						>
 						</Trans>
 					</H1>
 					<H6
 						style={{
-							maxWidth: "30rem",
-							fontWeight: "lighter"
+							maxWidth: "30rem"
 						}}
 					>
 						{t("landing:hero.subtitle")}
