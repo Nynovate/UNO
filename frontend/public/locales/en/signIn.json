@@ -6,7 +6,11 @@
 		},
 		"password": {
 			"title": "Password",
-			"placeholder": "Enter your password"
+			"placeholder": "*******"
 		}
+	},
+	"buttons": {
+		"forgotPass": "Forgot Password?",
+		"alreadyHaveAnAccount": "<simple>Already have an account?<simple/> <redirect>Sign Up</redirect>"
 	}
 }

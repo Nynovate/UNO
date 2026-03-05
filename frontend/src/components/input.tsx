@@ -37,6 +37,7 @@ export const InputText: React.FC<InputProps> = ({
 				bg-foreground
 				p-2
 				rounded-lg
+				w-full
 				gap-3"
 				style={{
 					outlineStyle: "solid",
@@ -49,7 +50,9 @@ export const InputText: React.FC<InputProps> = ({
 				/>
 				<input
 					className="focus:outline-none font-light
+					text-md
 					caret-secondary"
+					required
 					type={type}
 					name={name}
 					id={name}
@@ -87,6 +90,7 @@ export const InputPassword: React.FC<Omit<InputProps, "type">> = ({
 				bg-foreground
 				p-2
 				rounded-lg
+				w-full
 				gap-3"
 				style={{
 					outlineStyle: "solid",
@@ -96,7 +100,9 @@ export const InputPassword: React.FC<Omit<InputProps, "type">> = ({
 			>
 				<input
 					className="focus:outline-none font-light
+					text-md
 					caret-secondary"
+					required
 					type={showInput ? "text" : "password"}
 					name={name}
 					id={name}

@@ -4,6 +4,7 @@
 	},
 	"CTA": {
 		"signIn": "Sign In",
-		"signUp": "Sign Up"
+		"signUp": "Sign Up",
+		"google": "Continue with Google"
 	}
 }

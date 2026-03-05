@@ -17,7 +17,7 @@ const LandingPage: React.FC = () => {
 				className="absolute top-0 left-0
 				opacity-75
 				select-none
-				blur-xl
+				blur-[124px]
 				w-full h-full object-cover"
 				src={BackgroundWave}
 				alt="Background Wave"
@@ -44,8 +44,8 @@ const LandingPage: React.FC = () => {
 							t={t}
 							i18nKey="landing:hero.title"
 							components={{
-								red: <b className="text-red-500 font-bold text-[3rem]" />,
-								yellow: <b className="text-yellow-500 font-bold text-[3rem]" />
+								red: <b className="text-red-500 font-bold text-[4rem]" />,
+								yellow: <b className="text-yellow-500 font-bold text-[4rem]" />
 							}}
 						>
 						</Trans>
