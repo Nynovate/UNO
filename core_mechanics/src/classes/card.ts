@@ -10,12 +10,12 @@
 //                                                                            //
 // ************************************************************************** //
 
-import {card_color, card_value, t_card} from '../types';
+import { card_color, card_value, t_card } from '../types';
 
-export class uno_card implements card {
-	public readonly id: string,
-	public readonly color: card_color,
-	public readonly value: card_value,
+export class uno_card implements t_card {
+	public readonly id: string;
+	public readonly color: card_color;
+	public readonly value: card_value;
 
 	constructor(id: string, color: card_color, value: card_value) {
 		this.id = id;
@@ -23,8 +23,8 @@ export class uno_card implements card {
 		this.value = value;
 	}
 
-	public can_be_played(card_to_check: UnoCard): boolean {
-		if (this.value === 'Wild') {
+	public can_be_played(card_to_check: uno_card): boolean {
+		if (this.value === 'wild') {
 			return true;
 		}
 		if (this.color === card_to_check.color) {

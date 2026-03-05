@@ -10,6 +10,8 @@
 //                                                                            //
 // ************************************************************************** //
 
+import { uno_card } from "./classes/card";
+
 export enum card_color {
 	red = 'red',
 	blue = 'blue',
@@ -19,7 +21,7 @@ export enum card_color {
 }
 
 export enum card_value {
-	zero = '0', 
+	zero = '0',
 	one = '1',
 	two = '2',
 	three = '3',
@@ -49,7 +51,7 @@ export interface t_card {
 }
 
 export interface t_player {
-    id: string;
-    name: string;
-    hand: t_card[];
+	id: string;
+	name: string;
+	hand: uno_card[];
 }
